@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-formulario',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioComponent implements OnInit {
   //#region 'Variables'
+  public dteInicio: NgbDateStruct;
+  public dteFin: NgbDateStruct;
   //#endregion 'Variables'
 
   //#region 'Angular Life Cycle'

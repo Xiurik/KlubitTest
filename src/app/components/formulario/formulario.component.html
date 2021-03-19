@@ -64,16 +64,36 @@
     </div>
     <div class="col-md-5">
       <div class="form-group">
-        <label for="password-confirm">Fecha Inicio</label>
-        <input class="form-control" id="password-confirm" aria-describedby="emailHelp" />
-        <small id="emailHelp" class="form-text text-muted">Error message goes here</small>
+        <div class="input-group">
+          <input
+            class="form-control"
+            placeholder="Fecha Inicio"
+            name="fecha_inicio"
+            [(ngModel)]="dteInicio"
+            ngbDatepicker
+            #fi="ngbDatepicker"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary gg-calendar" (click)="fi.toggle()" type="button"></button>
+          </div>
+        </div>
       </div>
     </div>
     <div class="col-md-5">
       <div class="form-group">
-        <label for="password-confirm">Fecha Fin</label>
-        <input class="form-control" id="password-confirm" aria-describedby="emailHelp" />
-        <small id="emailHelp" class="form-text text-muted">Error message goes here</small>
+        <div class="input-group">
+          <input
+            class="form-control"
+            placeholder="Fecha Fin"
+            name="fecha_fin"
+            [(ngModel)]="dteFin"
+            ngbDatepicker
+            #ff="ngbDatepicker"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary gg-calendar" (click)="ff.toggle()" type="button"></button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -85,8 +105,12 @@
       </div>
     </div>
   </div>
-  <button class="btn btn-primary">Validar</button>
+  <div class="row">
+    <div class="col-md-12">
+      <button class="btn btn-primary">Validar</button>
+    </div>
+  </div>
+  <br /><br />
+  <!-- Componente Image Loader -->
+  <app-image-loader></app-image-loader>
 </form>
-<br /><br />
-<!-- Componente Image Loader -->
-<app-image-loader></app-image-loader>
