@@ -20,7 +20,7 @@ Se tienen 2 componentes que se comunican entre ellos, el primer componente es un
 - [ ] El campo de **Comentarios** debe de crecer conforme el usuario introduzca texto pero no debe de ser expandible por el usuario.
 - [ ] El campo de **Contraseña y Confirmar Contraseña** no debe mostrar lo que se está escribiendo.
 - [ ] Se debe de validar que los campos **Contraseña y Confirmar Contraseña** sean iguales, en cambio de que sean diferentes, se debe de mostrar un mensaje de error.
-- [ ] El campo de **Agendar Viaje** si se da click en Omitir, ambos campos de **Inicio y Fin** deberán de ser deshabilitados, si no está seleccionado el checkbox de Omitir, ambos deben de estar habilitados.
+- [ ] El campo de **Agendar Viaje** si se da click, ambos campos de **Inicio y Fin** deberán de ser habilitados, si no está seleccionado el checkbox de **No Agendar Viaje**, ambos deben de estar inhabilitados.
 - [ ] Al cargar el componente la fecha de Inicio debe de ser igual a la **fecha actual** y el Final tiene que ser el dia siguiente, por ejemplo: **Inicio = 01/10/2021, Final = 02/10/2021**, esto considerando que el formato es DD/MM/YYYY.
 - [ ] La fecha de **Inicio** no puede ser menor a la fecha **actual**
 - [ ] La fecha de **Inicio** no puede ser mayor a la **Final**
